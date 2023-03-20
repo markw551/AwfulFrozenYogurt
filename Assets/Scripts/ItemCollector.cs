@@ -2,42 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//public class ParentClass : MonoBehaviour
+//{
+    
+//}
+
 public class ItemCollector : MonoBehaviour
 {
-    public int score = 0;
 
-    public class ScoreTracker
+    public string Collector;
+    public int ScoreOne;
+    public int ScoreTwo;
+
+    public ItemCollector(string collector, int scoreone, int scoretwo)
     {
-        public string Player; 
-        public int Score;
+        this.ScoreOne = scoreone;
+        this.ScoreTwo = scoretwo;
+        this.Collector = collector;
 
-        public ScoreTracker(string player, int score)
-        {
-            this.Score = score;
-            this.Player = player;
-
-        }
     }
 
     public void Start()
     {
-        ScoreTracker Player1 = new ScoreTracker("Player 1", 0);
-        ScoreTracker Player2 = new ScoreTracker("Player 2", 0);
+        ItemCollector Player1 = new ItemCollector("Player 1", 0, 0);
+        ItemCollector Player2 = new ItemCollector("Player 2", 0, 0);
     }
 
-    public void Update()
-    {
 
-}
-
-public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Collectibles"))
+        if (gameObject.tag == "Player 1" &&  collision.gameObject.CompareTag("Collectibles"))
         {
             Destroy(collision.gameObject);
-            score++;
-            Debug.Log(score);
+            ScoreOne++;
+            Debug.Log(ScoreOne);
+        }
+
+        if (gameObject.tag == "Player 2" && collision.gameObject.CompareTag("Collectibles"))
+        {
+            Destroy(collision.gameObject);
+            ScoreTwo++;
+            Debug.Log(ScoreTwo);
         }
     }
+
+    //public void Update()
+    //{
+
+    //}
 }
 
