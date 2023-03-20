@@ -10,15 +10,18 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed = 5f;
 
-    public class Movement
+    // Player moving in the level
+    public class UserMovement
     {
+        // Creating key inputs for each movement
         public string Player;
         public string UpKey;
         public string DownKey;
         public string LeftKey;
         public string RightKey;
 
-        public Movement(string player, string upKey, string downKey, string leftKey, string rightKey)
+        // Combining inputs into a constructor for a player's movement
+        public UserMovement(string player, string upKey, string downKey, string leftKey, string rightKey)
         {
             this.Player = player;
 
@@ -39,8 +42,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Movement Player1 = new Movement("Player 1", "w", "s", "a", "d");
-        Movement Player2 = new Movement("Player 2", "up", "down", "left", "right");
+        // Assigning key inputs for each player's movement
+        UserMovement Player1 = new UserMovement("Player 1", "w", "s", "a", "d");
+        UserMovement Player2 = new UserMovement("Player 2", "up", "down", "left", "right");
 
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -49,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Making sure two players can move with different key inputs
         if (gameObject.tag == "Player 1" && Input.GetKey("w") || gameObject.tag == "Player 2" && Input.GetKey("up"))
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
