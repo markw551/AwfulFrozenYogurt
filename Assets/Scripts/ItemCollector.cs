@@ -13,35 +13,3 @@ public class ItemCollector : MonoBehaviour
     }
 }
 
-//{
-//    public int score = 0;
-    
-//    public class Collector
-//    {
-//        public int FruitValue;
-//        public bool Collider; 
-
-//        public Collector(int fruitvalue, bool collider)
-//        {
-//            this.FruitValue = fruitvalue;
-//            this.Collider = collider;
-//        }
-//    }
-
-//    void Start()
-//    {
-//        Collector Player = new Collector(5, true);
-//        Player
-//    }
-
-//    void Update()
-//    {
-//        if (collider && gameObject.CompareTag("Collectibles"))
-//        {
-//            // Do something when colliding with a collectible
-//            Debug.Log("Player collected a collectible!");
-//            Destroy(gameObject);
-//            score += FruitValue;
-//        }
-//    }
-//}
