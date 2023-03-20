@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public class Movement
     {
+        public GameObject player;
         public string UpKey;
         public string DownKey;
         public string LeftKey;
