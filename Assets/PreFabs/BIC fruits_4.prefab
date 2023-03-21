@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7466729673043681733}
   m_Layer: 0
   m_Name: BIC fruits_4
-  m_TagString: Untagged
+  m_TagString: Collectibles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
