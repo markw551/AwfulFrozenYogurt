@@ -17,12 +17,6 @@ namespace ScoreTracker
             Player = player;
             Score = score;
         }
-
-        //public void Initialize(string player, int score)
-        //{
-        //    Player = player;
-        //    Score = score;
-        //}
     }
 }
 
