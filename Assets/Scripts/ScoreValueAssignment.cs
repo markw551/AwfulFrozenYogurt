@@ -7,14 +7,12 @@ using UnityEngine;
 
 namespace ScoreTracker
 {
-    public class PlayerCollision : MonoBehaviour
+    public class ScoreValueAssignment : MonoBehaviour
     {
-        public string Player;
         public int Score;
 
-        public PlayerCollision(string player, int score)
+        public ScoreValueAssignment(int score)
         {
-            Player = player;
             Score = score;
         }
     }
