@@ -137,6 +137,8 @@ GameObject:
   - component: {fileID: 38977747}
   - component: {fileID: 38977749}
   - component: {fileID: 38977750}
+  - component: {fileID: 38977751}
+  - component: {fileID: 38977752}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player 1
@@ -204,8 +206,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38977744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.43, y: -5.08, z: 0}
-  m_LocalScale: {x: 3.771388, y: 3.077175, z: 9.62}
+  m_LocalPosition: {x: 1.27, y: -5.2119, z: 0}
+  m_LocalScale: {x: 3.0386074, y: 2.5885196, z: 9.62}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -298,6 +300,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &38977751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38977744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c793d6ccaa2d04213a18b7fece199f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: 
+  Score: 0
+--- !u!114 &38977752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38977744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9383bed60c79941dc92cb70e9711fc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1001 &66554263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1937,6 +1967,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 784155192959289898, guid: 3b902f4ce9ef643d694c74b61b8701dd, type: 3}
   m_PrefabInstance: {fileID: 336184141}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &355958639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2766426113737991794, guid: 3b902f4ce9ef643d694c74b61b8701dd, type: 3}
+  m_PrefabInstance: {fileID: 336184141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &355958642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355958639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9383bed60c79941dc92cb70e9711fc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1001 &576837929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2012,6 +2061,8 @@ GameObject:
   - component: {fileID: 624228619}
   - component: {fileID: 624228623}
   - component: {fileID: 624228622}
+  - component: {fileID: 624228625}
+  - component: {fileID: 624228624}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player 2
@@ -2092,8 +2143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624228618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.69, y: -5.01, z: 0}
-  m_LocalScale: {x: 3.7901752, y: 3.1105177, z: 1}
+  m_LocalPosition: {x: -0.6167, y: -5.1572, z: 0}
+  m_LocalScale: {x: 3.3831103, y: 2.6762896, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2153,6 +2204,34 @@ PolygonCollider2D:
       - {x: 0.17999999, y: -0.26999998}
       - {x: 0.17999999, y: 0.08}
       - {x: 0.14, y: 0.089999996}
+--- !u!114 &624228624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624228618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c793d6ccaa2d04213a18b7fece199f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: 
+  Score: 0
+--- !u!114 &624228625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624228618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9383bed60c79941dc92cb70e9711fc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1: {fileID: 0}
+  P2: {fileID: 0}
 --- !u!1001 &754769821
 PrefabInstance:
   m_ObjectHideFlags: 0

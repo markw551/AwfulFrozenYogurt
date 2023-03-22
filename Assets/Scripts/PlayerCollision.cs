@@ -1,37 +1,29 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
+namespace ScoreTracker
 {
-    public bool canCollideWithEnemy = true;
-
-    public class Collision
+    public class PlayerCollision : MonoBehaviour
     {
-        public string Enemy;
         public string Player;
+        public int Score;
 
-        public Collision(string player, string enemy)
+        public PlayerCollision(string player, int score)
         {
-            this.Player = player;
-            this.Enemy = enemy;
+            Player = player;
+            Score = score;
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        Collision Player1 = new Collision("Player1", "Enemy");
-        Collision Player2 = new Collision("Player2", "Enemy");
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (canCollideWithEnemy && gameObject.tag == "Enemy" && gameObject.tag == "Player1")
-        {
-            Debug.Log("Collided");
-        }
+        //public void Initialize(string player, int score)
+        //{
+        //    Player = player;
+        //    Score = score;
+        //}
     }
 }
+
+
