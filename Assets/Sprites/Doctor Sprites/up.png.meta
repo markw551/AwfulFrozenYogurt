@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 75d9d728b00e5324f851d5d3c0747d84
+guid: 0bb52f1c55733714d82e1d7fc91fbd60
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a384d479051b6304ba94fc02a3e26620
-      internalID: -1428343577
+      spriteID: 17faa744a6a7a444cb1c33502560f9d5
+      internalID: 1301729209
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
       name: up_1
       rect:
         serializedVersion: 2
-        x: 607
+        x: 591
         y: 0
         width: 286
         height: 500
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c650e9adc07d9c46b6ec2e79f07d200
-      internalID: 540595759
+      spriteID: 76bee94e6ee09024d8ead0693d75ef9e
+      internalID: 1357540087
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebdb2f77029d7934e9cc6ce2d3119c34
-      internalID: 1468655661
+      spriteID: aec64aa691e2de04290df31dca2e7401
+      internalID: 2075527141
       vertices: []
       indices: 
       edges: []
@@ -183,7 +183,7 @@ TextureImporter:
       name: up_3
       rect:
         serializedVersion: 2
-        x: 1591
+        x: 1607
         y: 0
         width: 286
         height: 500
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949b86f2de8d35640a9f757b737616a9
-      internalID: 364971599
+      spriteID: d93621dc9ba064a43b737ca4d6ab9539
+      internalID: -1095929286
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a96914c74426f548aa4356524d59ec1
-      internalID: 165649792
+      spriteID: 2e0c1f6c53a49924c80f045f5d1cf361
+      internalID: 634637462
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      up_4: 165649792
-      up_0: -1428343577
-      up_3: 364971599
-      up_1: 540595759
-      up_2: 1468655661
+      up_4: 634637462
+      up_0: 1301729209
+      up_3: -1095929286
+      up_1: 1357540087
+      up_2: 2075527141
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
